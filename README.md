@@ -1,11 +1,9 @@
-# TS-Primer
-The dawn of a TypeScript project.
+# Linode Compilation Bug
 
-## Automated tests
-Never commit something that breaks the build! You can
-easily prevent this by linking the `test` script as a git `pre-commit` hook!
+Run `npm install` to get:
 
-like this:
-```bash
-ln test .git/hooks/pre-commit
+```
+node_modules/@linode/api-v4/lib/support/types.d.ts:1:24 - error TS2307: Cannot find module 'src/account/types' or its corresponding type declarations.
+
+1 import { Entity } from 'src/account/types';
 ```
